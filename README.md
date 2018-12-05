@@ -1,1 +1,0 @@
-# resolucao-exercicios
