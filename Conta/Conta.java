@@ -1,24 +1,26 @@
 
-// Figura 3.1: Account.java
- // Classe Account que contém uma variável de instância name
- // e métodos para configurar e obter seu valor.
+/*
+ * Nome do autor: Ilton Batista da Silva Júnior 
+ * Data de criação do arquivo: 05/12/2018 
+ * Objetivo sucinto do programa: Programa para demonstração do uso de 
+ * THIS (Programação Orientada a Objetos) 
+ * Referência ao enunciado/origem do exercício: Paul Deitel, Harvey Deitel-Java - Como Programar-Pearson (2016) páginas: 56 a 63
+ */
 
  public class Conta
 {
 private String nome = "carlos"; // variável de instância
 
     // método para definir o nome no objeto 
-    public void colocaNome(String nome) 
+    public void getNome(String nome) 
     { 
         this.nome = nome; // armazena o nome 
     } 
     // método para recuperar o nome do objeto 
-    public String pegaNome(String text) 
+    public String setNome(String texto) 
     { 
         return nome; // retorna valor do nome para o chamador
     }
-    public static void main(String[] args) {   
 
-    }
     
  } // fim da classe Account
