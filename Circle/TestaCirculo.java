@@ -7,9 +7,10 @@
 
 public class TestaCirculo {
     public static void main(String[] args) {
-        Circulo circuloUm = new Circulo();
-        Circulo circuloDois = new Circulo();
-        Circulo circuloTres = new Circulo();
+        //Cada um dos circulos
+        Circulo circuloUm = new Circulo(4, "blue");
+        Circulo circuloDois = new Circulo(2, "black");
+        Circulo circuloTres = new Circulo(6, "prata");
 
 
         

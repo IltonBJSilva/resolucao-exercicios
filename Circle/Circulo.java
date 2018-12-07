@@ -46,7 +46,7 @@
 
     public String toString(){
 
-        return "Raio: " + raio + ", Cor: " + cor;
+        return "Circulo [Raio: " + raio + ", Cor: " + cor +"]";
 
     }
 
