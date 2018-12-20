@@ -19,7 +19,7 @@ public class Livro{
     String statusLivro;
     Date dataEmprestimo;
     Date dataDevolucao;
-    SimpleDateFormat converter = new SimpleDateFormat("dd-mm-yyy");
+    SimpleDateFormat converter = new SimpleDateFormat("dd-MM-yyy");
 
     public Livro(){}
 
@@ -48,7 +48,7 @@ public class Livro{
     }
 
    public String getDataEmprestimo(){
-        String data = "Emprestimo efetuado no dia: " + converter.format(dataEmprestimo);
+        String data = "" + converter.format(dataEmprestimo);
         return data;
     }
     
@@ -58,7 +58,7 @@ public class Livro{
 
     // Retorna a data de devolucao
     public String getDataDevolucao() {
-        String data = "Devolucao deve ser realizada no dia: " + converter.format(dataDevolucao);
+        String data = "" + converter.format(dataDevolucao);
         return data;
     }
 
@@ -86,7 +86,7 @@ public class Livro{
     //Esse metodo empresta livros
     public String emprestarLivro(){
         
-        if(statusLivro == "Disponivel"){
+        if(this.getStatusLivro() == "Disponivel"){
             statusLivro = "Emprestado";
             Date dataAtual = new Date();
             setDataEmprestimo(dataAtual);
@@ -94,11 +94,11 @@ public class Livro{
             Date dataAux = new Date();
             setDataDevolucao(dataAux);
             quantidadeEmprestimos++;
-            return "Realizado com sucesso o emprestimo do livro\n" + "data de emprestimo: " + converter.format(dataEmprestimo) + "\n" + "data de devolucao: " + converter.format(dataDevolucao);
+            return "------------------------------------------------------\nO livro" + titulo +"foi emprestado com sucesso.\n";
 
         }
         else{
-            return "Livro indisponivel";
+            return "------------------------------------------------------\n\nO livro " + titulo + " já está emprestado.\n";
         }
 
 
@@ -108,10 +108,10 @@ public class Livro{
     public String devolverLivro(){
         if(statusLivro == "Emprestado"){
             statusLivro = "Disponivel";
-            return "O livro devolvido corretamente";
+            return "------------------------------------------------------\nO livro " + titulo + "devolvido com sucesso.\n";
         }
         else{
-            return "falha ao devolver o livro";
+            return "------------------------------------------------------\n\nO livro " + titulo + "não pode ser devolvido, pois não está emprestado.\n";
         }
 
 
@@ -119,12 +119,18 @@ public class Livro{
 
 
     //Esse metodo lista e busca todos os livros pelo autor e pelo titulo
-    public String buscarLivro(Livro[] arr, String titulo, String autor){
+    public static String buscarLivro(Livro[] arr, String titulo, String autor){
        
 
         for(int i = 0; i < arr.length; i++){
             if(arr[i].getTitulo() == titulo && arr[i].getAutor() == autor){
-                return "Livro encotrado no numero: " + i;
+                return "------------------------------------------------------\nLivro encotrado com sucesso!\n"+ "Id: " + arr[i].getId() 
+                + "\nTitulo: " + arr[i].getTitulo() 
+                + "\nAutor: "+ arr[i].getAutor() 
+                + "\nData de emprestimo: " + arr[i].getDataEmprestimo() 
+                + "\nData de devolucao: " + arr[i].getDataDevolucao() 
+                + "\nStatus do livro: " + arr[i].getStatusLivro() 
+                + "\nQuantidade de emprestimos: " + arr[i].getQuantidadeEmprestimos();
             }
             
         }
@@ -133,20 +139,20 @@ public class Livro{
     }
     
     //Esse metodo exibi todos os livros que foram Emprestados
-    static public String exibirLivrosEmprestados (Livro[] arr){
-        String livros = "Emprestados:\n";
+    public static String exibirLivrosEmprestados (Livro[] arr){
+        String livros = "Emprestados\n";
         for(int i = 0; i < arr.length; i++){
             if(arr[i].getStatusLivro() == "Emprestado"){
-                livros += arr[i].getTitulo() +"\n";
+                livros += "Titulo do livro = " + arr[i].getTitulo() +"\n";
             }
         }
         return livros;
     }
 
     //esse metodo exibi todos os livros Disponivel ou seja que não foram emprestados
-    static public String exibirLivrosDisponiveis(Livro[] arr){
-    String livros = "Disponivel:\n";for(
-    int i = 0;i<arr.length;i++)
+    public static String exibirLivrosDisponiveis(Livro[] arr){
+    String livros = "------------------------------------------------------\nLivro disponivel\n";
+    for(int i = 0;i<arr.length;i++)
     {
         if (arr[i].getStatusLivro() == "Disponivel") {
             livros += arr[i].getTitulo() + "\n";
@@ -157,11 +163,11 @@ public class Livro{
     }
 
     //Esse metodo so exibi os livros atrasados
-    static public String exibirLivrosAtrasados(Livro[] arr){
-        String livros = "Livros Atrasados:\n";
+    public static String exibirLivrosAtrasados(Livro[] arr){
+        String livros = "------------------------------------------------------\nLivros Atrasados\n";
         Date dataAtual = new Date();
         for(int i = 0; i < arr.length; i++){
-            if(dataAtual.getTime() > arr[i].dataDevolucao.getTime() && arr[i].getStatusLivro() == "Atrasados sao:"){
+            if(dataAtual.getTime() > arr[i].dataDevolucao.getTime() && arr[i].getStatusLivro() == "Emprestado"){
                 livros += arr[i].getTitulo() + "\n";
             }
         }
@@ -173,41 +179,59 @@ public class Livro{
         Date dataAtual = new Date();
             if(dataAtual.getTime() < dataDevolucao.getTime()){
                 long diferente = dataDevolucao.getTime() - dataAtual.getTime();
-                long dia = diferente / (864 * 1 * 1000) * -1;
-                double preco = dia * diferente * taxaPorDiaAtrasado;
-                
+                long dia = diferente / (864 * 1 * 100000) * 1;
+                double preco = dia * taxaPorDiaAtrasado;
                 return preco;
             }else{
                 return -1;
             }
-    }
+    } 
 
-    //Esse metodo lista todos os livros que existe na estante
-    static public String listarTodosLivros (Livro[] arr){
-        String livros = "Todos os Livros:\n";
-        for(int i = 0; i < arr.length; i++){
-            livros += arr[i].getTitulo() + "\n";
-        }
-        return livros;
-
-    }
 
     //Esse metodo lista todos os livros no qual mas pessoas pegou
-    static public String listarLivrosMaisEmprestados(Livro[] arr){
-        String livro = "Mas emprestados: \n";
+    public static String exibeLivroMaisEmprestado(Livro[] arr){
+        String livro = "------------------------------------------------------\nMas emprestados: \n";
         int quantidadeEmprest = 0;
         int posicao = 0;
+        int id = 0;
+        String titulo = "";
+        String autor = "";
+        String statusLivro = "";
+        String dataEmprestimo = "";
+        String dataDevolucao = "";
+        int quantidadeEmprestimos = 0;
+
         for(int i = 0; i < arr.length; i++){
             if (i == 0){
                 quantidadeEmprest = arr[i].getQuantidadeEmprestimos();
                 posicao = i;
+                id = arr[i].getId();
+                titulo = arr[i].getTitulo();
+                autor = arr[i].getAutor();
+                statusLivro = arr[i].getStatusLivro();
+                dataEmprestimo = arr[i].getDataEmprestimo();
+                dataDevolucao = arr[i].getDataDevolucao();
+                quantidadeEmprestimos = arr[i].getQuantidadeEmprestimos();
+
+
 
             }if (arr[i].getQuantidadeEmprestimos() > quantidadeEmprest){
                 quantidadeEmprest = arr[i].getQuantidadeEmprestimos();
                 posicao = i;
+                id = arr[i].getId();
+                titulo = arr[i].getTitulo();
+                autor = arr[i].getAutor();
+                statusLivro = arr[i].getStatusLivro();
+                dataEmprestimo = arr[i].getDataEmprestimo();
+                dataDevolucao = arr[i].getDataDevolucao();
+                quantidadeEmprestimos = arr[i].getQuantidadeEmprestimos();
             }
         }
-        return livro += arr[posicao].getTitulo() + " com " + quantidadeEmprest + " Emprestimos";
+        return "------------------------------------------------------\nLivros mas emprestados\n" + "ID: " + id 
+        + "\nTitulo: "+ titulo 
+        + "\nAutor: " + autor 
+        + "\nStatus do livro: " + statusLivro 
+        + "\nQuantidade de emprestimo: " + quantidadeEmprestimos;
     }
 
     
