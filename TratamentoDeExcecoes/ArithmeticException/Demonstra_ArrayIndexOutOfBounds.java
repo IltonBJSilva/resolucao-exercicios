@@ -3,7 +3,7 @@
  * Nome do autor: Ilton Batista da Silva Júnior 
  * Data de criação do arquivo: 20/12/2018 
  * Objetivo sucinto do programa: Demonstrar a situação de erro quando se divide por 0 usando try catch  com a ArithmeticException
- * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1Uq6IUqO100w2ylIxVi17RTwYLo-ljPu2YGu7KPPDydg/edit
+ * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1cCI5x1i5kef9dWZKrvrobbZddDXuLhhK5Kw8Pdj-ouA/edit
  */
 
 class Demonstra_ArrayIndexOutOfBounds{
