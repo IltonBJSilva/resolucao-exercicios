@@ -2,7 +2,7 @@
 /*
  * Nome do autor: Ilton Batista da Silva Júnior 
  * Data de criação do arquivo: 20/12/2018 
- * Objetivo sucinto do programa: Demonstrar a execeção de nome ArrayIndexOutOfBoundsException de que quando tenta acessar um array que não existe
+ * Objetivo sucinto do programa: Demonstra lançamento na execeção do tipo ArrayIndexOutOfBoundsException
  * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1cCI5x1i5kef9dWZKrvrobbZddDXuLhhK5Kw8Pdj-ouA/edit
  */
 
