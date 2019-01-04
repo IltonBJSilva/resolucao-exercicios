@@ -10,8 +10,7 @@ public class ContaBancaria {
     String nomeTitular;
     double saldo = 0.0;
 
-    public ContaBancaria() {
-    }
+    public ContaBancaria() {}
 
     public ContaBancaria(int id, String nomeTitular, double saldo) {
         this.id = id;

@@ -27,7 +27,7 @@ public class ContaTeste
 
         String Onome = input.nextLine(); // lê uma linha de texto pra vc mesmo inserir oque deseja que vai virar Onome
 
-        minhaConta.colocaNome(Onome); // insere Onome em minhaConta no colocaNome que recebe como paramentro nome
+        minhaConta.getNome(Onome); // insere Onome em minhaConta no getNome que recebe como paramentro nome
 
         System.out.println(); // gera saída de uma linha em branco
 
