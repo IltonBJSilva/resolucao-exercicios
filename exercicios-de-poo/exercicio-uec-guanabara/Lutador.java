@@ -22,21 +22,19 @@ public class Lutador{
     //Metodos Especiais
     public Lutador(){}
     
-    public Lutador(String nome, String nacionalidade,int vitorias, int idade,int derrotas, int empates, double altura, double peso){
-        /*Strings */
+
+    public Lutador(String nome, String nacionalidade, int idade, float altura, double peso, int vitorias, int derrotas, int empates) {
         this.nome = nome;
         this.nacionalidade = nacionalidade;
-        this.categoria = categoria;
-
-        /*Doubles */
         this.altura = altura;
-        setPeso(peso);
-        
-        /*Inteiros */
+        this.peso = peso;
+        this.categoria = categoria;
         this.vitorias = vitorias;
         this.idade = idade;
+        this.derrotas = derrotas;
         this.empates = empates;
     }
+ 
     
     /*Gets de string*/
     
@@ -145,6 +143,7 @@ public class Lutador{
         System.out.println("Origem: "+ this.getNacionalidade());
         System.out.println(this.getVitorias()+" anos");
         System.out.println(this.getAltura()+" m de altura");
+        System.out.println("Categoria: "+ this.getCategoria());
         System.out.println("Pensando "+ this.getPeso()+"Kg");
         System.out.println("Ganhou: "+ this.getVitorias());
         System.out.println("Perdeu:"+ this.getDerrotas());
@@ -153,11 +152,11 @@ public class Lutador{
     }
     
     public String status(){
-        // system.out.println(getNome());
-        // system.out.println("é um peso ",getPeso());
-        // system.out.println(getVitorias()," vitorias");
-        // system.out.println(getDerrotas(), "derrotas");
-        // system.out.println(getEmpates(), "empates");
+        // system.out.println(this.getNome());
+        // system.out.println("é um peso " + this.getPeso());
+        // system.out.println(this.getVitorias()+" vitorias");
+        // system.out.println(this.getDerrotas()+ " derrotas");
+        // system.out.println(this.getEmpates()+" empates");
         return "";
     }
     
