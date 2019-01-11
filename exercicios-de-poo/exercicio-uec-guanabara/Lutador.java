@@ -2,8 +2,8 @@
 /*
  * Nome do autor: Ilton Batista da Silva Júnior 
  * Data de criação do arquivo: 09/01/2019 
- * Objetivo sucinto do programa: 
- * Referência ao enunciado/origem do exercício:
+ * Objetivo sucinto do programa: Demonstar uma simulação de luta entre emoji
+ * Referência ao enunciado/origem do exercício: https://www.youtube.com/playlist?list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY
  */
 
 
