@@ -30,10 +30,11 @@ public class LutaDeEmoji{
 
         Luta luta = new Luta();
         
-        luta.marcarLuta(lutador[4], lutador[5]);
-        luta.lutar();
-        lutador[4].status();
-
+        // luta.marcarLuta(lutador[4], lutador[5]);
+        // luta.lutar();
+        lutador[1].status();
+        lutador[2].status();
+        lutador[5].status();
        
 
     }
