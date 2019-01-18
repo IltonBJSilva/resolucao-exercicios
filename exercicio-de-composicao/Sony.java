@@ -45,8 +45,8 @@ public class Sony {
 
 	@Override
 	public String toString() {
-		return "Sony \nquantidadeConsole = " + quantidadeConsole + ", \nfundador = " + fundador + ", \nceo = " + ceo
-				+ ", \nvalorConsole = " + valorConsole + ", \nversaoConsole = " + versaoConsole + "]";
+		return "Sony\nquantidade de Console = " + quantidadeConsole + "\nfundador = " + fundador + "\nCEO DA EMPRESA = " + ceo
+				+ "" + valorConsole;
 	}	
 	
 

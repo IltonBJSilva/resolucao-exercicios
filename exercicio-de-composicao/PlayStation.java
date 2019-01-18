@@ -75,8 +75,8 @@ public class PlayStation {
 
 	@Override
 	public String toString() {
-		return "\n\nPlayStation \n[identificacao = " + identificacao + ", \nprecoConsole=" + precoConsole + ", \nversao=" + versao
-				+ ", \nestado = " + estado + "]";
+		return "\n\nPlayStation\nID = " + identificacao + ", \nPreco do Console= " + precoConsole + "\nversao= " + versao
+				+ "\nestado = " + estado;
 	}
 	
 	
