@@ -15,6 +15,11 @@ public class PlayStation {
 	}
 	
 
+	public double getPrecoConsole() {
+		return precoConsole;
+	}
+
+
 	public int getIdentificacao() {
 		return this.identificacao;
 	}
@@ -75,8 +80,7 @@ public class PlayStation {
 
 	@Override
 	public String toString() {
-		return "\n\nPlayStation\nID = " + identificacao + ", \nPreco do Console= " + precoConsole + "\nversao= " + versao
-				+ "\nestado = " + estado;
+		return this.identificacao + this.precoConsole + this.versao + this.estado;
 	}
 	
 	

@@ -9,7 +9,7 @@ public class TestaSony {
 		PlayStation consolePlay3 = new PlayStation(1, 640.40, "3","Ligado");
 		PlayStation consolePlay4 = new PlayStation(1, 4000.40, "4","asuuasuash");
 		
-		Sony sony1 = new Sony(4," Akio Morita, Masaru Ibuka" ,"Kenichiro Yoshida",consolePlay1,consolePlay2);
+		Sony sony1 = new Sony(4," Akio Morita, Masaru Ibuka" ,"Kenichiro Yoshida",consolePlay1);
 
 		//sony1.toString();
 		System.out.println(sony1.toString());

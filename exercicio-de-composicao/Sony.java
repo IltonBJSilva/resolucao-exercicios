@@ -3,15 +3,13 @@ public class Sony {
 	int quantidadeConsole;
 	String fundador;
 	String ceo;
-	PlayStation valorConsole;
-	PlayStation versaoConsole;
+	PlayStation console;
 	
-	public Sony(int quantidadeConsole, String fundador, String ceo, PlayStation valorConsole, PlayStation versaoConsole) {
+	public Sony(int quantidadeConsole, String fundador, String ceo, PlayStation console) {
 		this.quantidadeConsole = quantidadeConsole;
 		this.fundador = fundador;
 		this.ceo = ceo;
-		this.valorConsole = valorConsole;
-		this.versaoConsole = versaoConsole;
+		this.console = console;
 	}
 	
 	public int getQuantidadeConsole() {
@@ -45,8 +43,14 @@ public class Sony {
 
 	@Override
 	public String toString() {
-		return "Sony\nquantidade de Console = " + quantidadeConsole + "\nfundador = " + fundador + "\nCEO DA EMPRESA = " + ceo
-				+ "" + valorConsole;
+		return "Sony\nquantidade de Console = " 
+				+ quantidadeConsole 
+				+"\nfundador = " + fundador 
+				+"\nCEO DA EMPRESA = " + ceo
+				+ "\nID = " + console.getIdentificacao()
+				+ "\nPreço do console = "+ console.getPrecoConsole()
+				+ "\nVersao do console = "+ console.getVersao()
+				+ "\nEstado do console = "+ console.getEstado();
 	}	
 	
 
