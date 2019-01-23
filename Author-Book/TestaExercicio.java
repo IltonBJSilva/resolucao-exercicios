@@ -1,7 +1,7 @@
 /* 
  * Nome do autor: Ilton Batista da Silva Júnior 
  * Data de criação do arquivo: 23/01/2019 
- * Objetivo sucinto do programa: retorna dados do livro no qual foi solicitado
+ * Objetivo sucinto do programa: Testar as classe Author.java e Book.java
  * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
  */
 

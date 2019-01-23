@@ -1,3 +1,11 @@
+/* 
+ * Nome do autor: Ilton Batista da Silva Júnior 
+ * Data de criação do arquivo: 23/01/2019 
+ * Objetivo sucinto do programa: Criar um classe que modela um livro de um autor, com atributos e métodos
+ * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
+ */
+
+
 package AuthorELivro;
 
 public class Book extends Author{
