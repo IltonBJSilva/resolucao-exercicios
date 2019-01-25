@@ -1,7 +1,7 @@
 package CustomerInvocer;
 /* 
  * Nome do autor: Ilton Batista da Silva Júnior 
- * Data de criação do arquivo: 23/01/2019 
+ * Data de criação do arquivo: 25/01/2019 
  * Objetivo sucinto do programa:  Cria clase que recebe valores de id nome e desconto de um cliente
  * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
  */
