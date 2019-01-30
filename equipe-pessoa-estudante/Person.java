@@ -5,7 +5,7 @@
  * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
  */
 
-package PersonStaffStudent;
+package br.com.sankhya.exercicio.person;
 
 public class Person {
 	private String name;
