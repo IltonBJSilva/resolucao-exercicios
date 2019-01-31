@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class JavaAtm3List {
+public class JavaAtm3Map {
 
 	public static void main(String[] args) {
 		int amount = 12;
