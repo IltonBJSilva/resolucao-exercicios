@@ -5,7 +5,9 @@
  * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
  */
 
-package AuthorELivro;
+package br.com.sankhya.exercicio.autorlivro;
+
+import br.com.sankhya.exercicion.equalsobject.Aluno;
 
 public class Author {
 	String name;
@@ -35,6 +37,25 @@ public class Author {
 	public char getGender() {
 		return gender;
 	}
+	
+	public boolean equals(Object object) {
+		//vai comparar se a referencia e igual ao paramentro que recebeu se for retorna verdadeiro
+		if(this == object) {
+			return true;
+		}
+		//se a referencia for nula retorna o null
+		if(this == null) {
+			return false;
+		}
+		Author other = (Author) object;
+		if(email.equalsIgnoreCase(other.getEmail()) && name.equalsIgnoreCase(other.getName())) {
+			return true;
+		}
+		return false;
+	}
+	
+
+	
 
 	@Override
 	public String toString() {

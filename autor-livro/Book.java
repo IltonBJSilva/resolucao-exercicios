@@ -6,7 +6,7 @@
  */
 
 
-package AuthorELivro;
+package br.com.sankhya.exercicio.autorlivro;
 
 public class Book extends Author{
 	String name;
