@@ -9,6 +9,8 @@
 
 package br.com.sankhya.timtec.topicosespecial;
 
+import java.security.KeyStore.Entry;
+import java.util.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -49,6 +51,9 @@ public class JavaCollectionMap {
 		for(String title : myBooks.keySet()) {
 			System.out.println(title);
 		}
+			
+		
+		
 		for(int score: myBooks.values()) {
 			System.out.println(score);
 		}

@@ -1,45 +1,68 @@
 /* 
- * Nome do autor: Ilton Batista da Silva JÃºnior 
- * Data de criaÃ§Ã£o do arquivo: 29/01/2019 
+ * Nome do autor: Ilton Batista da Silva Júnior 
+ * Data de criação do arquivo: 29/01/2019 
  * Objetivo sucinto do programa: Cria classe para testar Listas
- * ReferÃªncia ao enunciado/origem do exercÃ­cio: https://cursos.timtec.com.br/course/programacaojava/lesson/4-topicos-especiais#/5
- * InformaÃ§Ãµes adicionais: IntroduÃ§Ã£o Ã  programaÃ§Ã£o em linguagem JAVA
+ * Referência ao enunciado/origem do exercício: https://cursos.timtec.com.br/course/programacaojava/lesson/4-topicos-especiais#/5
+ * Informações adicionais: Introdução à programação em linguagem JAVA
  */
 
-package topicosEspecial;
+
+package br.com.sankhya.timtec.topicosespecial;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class JavaAtm3List {
 
 	public static void main(String[] args) {
 		int amount = 12;
 		List<Integer> billValues = Arrays.asList(100, 50, 20, 10, 5, 2, 1);
-
-		List<Integer> numberOfBills = getBillDistribution(amount, billValues);
-		printOutput(amount, billValues, numberOfBills);
-
+		
+		Map<Integer, Integer> distribution = getBillDistribution(amount, billValues);
+		printOutput(amount, distribution);
+		
+		
 	}
+	
 
-	public static void printOutput(int amount, List<Integer> billValues, List<Integer> numberOfBills) {
-		System.out.println(
-				"Dividindo R$ " + amount + " em notas de R$ 100, " + "R$ 50, R$ 20, R$ 10, R$ 5, R$  2 e R$ 1");
 
-		for (int i = 0; i < numberOfBills.size(); i++) {
-			System.out.println("Notas de R$ " + billValues.get(i) + ": " + numberOfBills.get(i));
+	public static void printOutput(int amount, Map<Integer, Integer> distribution) {
+		System.out.println("Dividindo R$ "+ amount +" em notas de R$ 100, "+ "R$ 50, R$ 20, R$ 10, R$ 5, R$  2 e R$ 1");
+		
+		if(true) {	
+			
+			for(Entry<Integer, Integer> e : distribution.entrySet()) {
+				int value = e.getKey();
+				int bills = e.getValue();
+				
+				System.out.println("sucesso\nNotas de R$ " + value + ": " + bills);
+			}
 		}
+		else if(false) {
+			System.out.println("Erro");
+		}
+			
 	}
-
-	public static List<Integer> getBillDistribution(int amount, List<Integer> billValues) {
-
-		ArrayList<Integer> numberOfBills = new ArrayList<>();
-
+	public static Map<Integer, Integer> getBillDistribution(int amount, List<Integer> billValues) {
+		
+		HashMap<Integer, Integer> distribution = new HashMap<>();
+		
 		for(int value : billValues) {
 			//numberOfBills[i] = amount / billValues[i];
-			numberOfBills.add(amount / value);
+			//distribution.add(amount / value);
+			int bills = amount / value;
+			if(bills > 0 ) {
+				distribution.put(value, bills);
+				
+			}
+			
 			amount %= value;
 		}
-		return numberOfBills;
+		return distribution;
 	}
+	
+}
