@@ -1,7 +1,7 @@
 /* 
  * Nome do autor: Ilton Batista da Silva Júnior 
  * Data de criação do arquivo: 29/01/2019 
- * Objetivo sucinto do programa: Cria classe para testar Listas
+ * Objetivo sucinto do programa: Cria classe para testar HashMap
  * Referência ao enunciado/origem do exercício: https://cursos.timtec.com.br/course/programacaojava/lesson/4-topicos-especiais#/5
  * Informações adicionais: Introdução à programação em linguagem JAVA
  */
