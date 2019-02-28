@@ -12,8 +12,6 @@ public class TestaCirculo {
         Circulo circuloDois = new Circulo(2, "black");
         Circulo circuloTres = new Circulo(6, "prata");
 
-
-        
         //Circulo1
         System.out.println("CIRCULO 1:");
         System.out.println("Cor = " + circuloUm.getCor());
@@ -37,7 +35,5 @@ public class TestaCirculo {
         System.out.println("Area = " + circuloTres.getArea());
         System.out.println("Circuferencia = " + circuloTres.getCircunferencia());
         System.out.println("---------------------------");
-    
     }
-
 }

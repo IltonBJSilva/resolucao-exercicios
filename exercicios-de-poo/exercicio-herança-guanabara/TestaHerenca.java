@@ -1,5 +1,4 @@
 public class TestaHerenca{
-    
     public static void main(String[] args) {
         
         Pessoa humanoPessoa = new Pessoa();

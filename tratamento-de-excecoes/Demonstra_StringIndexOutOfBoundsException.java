@@ -1,4 +1,3 @@
-
 /*
  * Nome do autor: Ilton Batista da Silva Júnior 
  * Data de criação do arquivo: 21/12/2018 
@@ -15,9 +14,5 @@ class Demonstra_StringIndexOutOfBoundsException{
         } catch(StringIndexOutOfBoundsException e){
             System.out.println("Não pode acessar essa parte na qual deseja");  
         }
-     
-
     }
-
-
 }

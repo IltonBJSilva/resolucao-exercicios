@@ -13,7 +13,7 @@ class Demonstra_IllegalArgumentException {
             throw new IllegalArgumentException("Argumento invalido");
         }
     }
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         try {
             verifica(32324012);
         } catch (IllegalArgumentException e){

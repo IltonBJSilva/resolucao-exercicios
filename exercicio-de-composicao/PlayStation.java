@@ -4,8 +4,7 @@ public class PlayStation {
 	private double precoConsole;
 	private String versao;
 	private String estado;
-	
-	
+
 	public PlayStation(int identificacao, double precoConsole, 
 					  String versao, String estado){
 		this.identificacao = identificacao;
@@ -13,12 +12,10 @@ public class PlayStation {
 		this.versao = versao;
 		this.estado = estado;
 	}
-	
 
 	public double getPrecoConsole() {
 		return precoConsole;
 	}
-
 
 	public int getIdentificacao() {
 		return this.identificacao;
@@ -39,13 +36,13 @@ public class PlayStation {
 	public void setVersao(String versao) {		
 
 		if(versao == "1") {
-			System.out.println("PlayStation 1 meu chapa meio antigo não acha?");
+			System.out.println("PlayStation 1 meu chapa meio antigo nï¿½o acha?");
 		} else if(versao == "2") {
 			System.out.println("PlayStation 2 ta evoluindo mas ainda continua antigo\n menos que antes mas continue firme");			
 		} else if(versao == "3") {
 			System.out.println("PlayStation 3 meu brow ja ta evoluindo um controle sem fio\n e top mesmo");
 		} else if(versao == "4") {
-			System.out.println("PlayStation 4 oloco vei tu tem um console de ultima geração que foda vei");
+			System.out.println("PlayStation 4 oloco vei tu tem um console de ultima geraï¿½ï¿½o que foda vei");
 		} else if(versao == "5") {
 			System.out.println("PlayStation 5? kkkk nem existe ainda menti e feio");
 		} else {
@@ -63,11 +60,10 @@ public class PlayStation {
 		} else if(estado == "Desligado"){
 			desligaConsole();
 		} else {
-			System.out.println("Estado não existe");
+			System.out.println("Estado nï¿½o existe");
 		}
-	}		
-
-	
+	}	
+		
 	public void ligarConsole() {
 		
 		System.out.println("Console ligado com sucesso");
@@ -77,11 +73,8 @@ public class PlayStation {
 		System.out.println("Console desligado com sucesso");
 	}
 
-
 	@Override
 	public String toString() {
 		return this.identificacao + this.precoConsole + this.versao + this.estado;
 	}
-	
-	
 }

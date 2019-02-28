@@ -100,8 +100,6 @@ public class Livro{
         else{
             return "------------------------------------------------------\n\nO livro " + titulo + " já está emprestado.\n";
         }
-
-
     }
 
     // esse metodo realiza a devolução do livro
@@ -113,14 +111,9 @@ public class Livro{
         else{
             return "------------------------------------------------------\n\nO livro " + titulo + "não pode ser devolvido, pois não está emprestado.\n";
         }
-
-
     }
-
-
     //Esse metodo lista e busca todos os livros pelo autor e pelo titulo
     public static String buscarLivro(Livro[] arr, String titulo, String autor){
-       
 
         for(int i = 0; i < arr.length; i++){
             if(arr[i].getTitulo() == titulo && arr[i].getAutor() == autor){
@@ -131,13 +124,10 @@ public class Livro{
                 + "\nData de devolucao: " + arr[i].getDataDevolucao() 
                 + "\nStatus do livro: " + arr[i].getStatusLivro() 
                 + "\nQuantidade de emprestimos: " + arr[i].getQuantidadeEmprestimos();
-            }
-            
+            } 
         }
-        
         return "Livro não encotrado";
     }
-    
     //Esse metodo exibi todos os livros que foram Emprestados
     public static String exibirLivrosEmprestados (Livro[] arr){
         String livros = "Emprestados\n";
@@ -148,7 +138,6 @@ public class Livro{
         }
         return livros;
     }
-
     //esse metodo exibi todos os livros Disponivel ou seja que não foram emprestados
     public static String exibirLivrosDisponiveis(Livro[] arr){
     String livros = "------------------------------------------------------\nLivro disponivel\n";
@@ -159,9 +148,7 @@ public class Livro{
         }
     }
     return livros;
-      
     }
-
     //Esse metodo so exibi os livros atrasados
     public static String exibirLivrosAtrasados(Livro[] arr){
         String livros = "------------------------------------------------------\nLivros Atrasados\n";
@@ -173,7 +160,6 @@ public class Livro{
         }
         return livros;
     }
-
     //Esse metodo gera uma multa se a pessoa demorar muito e multada de acordo com o tanto de dia
     public double gerarMulta(double taxaPorDiaAtrasado){
         Date dataAtual = new Date();
@@ -185,8 +171,7 @@ public class Livro{
             }else{
                 return -1;
             }
-    } 
-
+    }
 
     //Esse metodo lista todos os livros no qual mas pessoas pegou
     public static String exibeLivroMaisEmprestado(Livro[] arr){
@@ -213,8 +198,6 @@ public class Livro{
                 dataDevolucao = arr[i].getDataDevolucao();
                 quantidadeEmprestimos = arr[i].getQuantidadeEmprestimos();
 
-
-
             }if (arr[i].getQuantidadeEmprestimos() > quantidadeEmprest){
                 quantidadeEmprest = arr[i].getQuantidadeEmprestimos();
                 posicao = i;
@@ -234,12 +217,8 @@ public class Livro{
         + "\nQuantidade de emprestimo: " + quantidadeEmprestimos;
     }
 
-    
     public String toString(){
 
         return "Livro[id= " + id + " titulo= " + titulo + " autor= " + autor + " dataEmprestimo= "+ converter.format(dataEmprestimo) + " dataDevolucao= " + converter.format(dataDevolucao) + " statusLivro= " + statusLivro + " quantidadeEmprestimos= " + quantidadeEmprestimos + "]";
-        
     }
-
-
 }

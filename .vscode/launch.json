@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ContaTeste",
+            "request": "launch",
+            "mainClass": "ContaTeste"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestaExercicio",
+            "request": "launch",
+            "mainClass": "AuthorELivro2.TestaExercicio"
+        }
+    ]
+}

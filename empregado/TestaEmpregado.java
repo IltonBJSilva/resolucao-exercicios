@@ -6,9 +6,7 @@
  */
 
 public class TestaEmpregado {
-
-
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         //Fucionario da empresa
         Empregado Fucionario1 = new Empregado(1, "Ilton", "Batista", 1000);
         Empregado Fucionario2 = new Empregado(2, "Elian", "Melo", 800);
@@ -30,7 +28,6 @@ public class TestaEmpregado {
         System.out.println("Salario Anual = " + Fucionario2.getSalarioAnual());
         System.out.println(" Aumento de salario = " + Fucionario2.getAumentoSalario(20));
 
-
         //Fucionario 3:
         System.out.println("-------------------------------------------");
         System.out.println("Fucionario 3:");
@@ -40,5 +37,4 @@ public class TestaEmpregado {
         System.out.println(" Aumento de salario = " + Fucionario3.getAumentoSalario(30));
 
     }
-
 }

@@ -48,13 +48,8 @@ public class Sony {
 				+"\nfundador = " + fundador 
 				+"\nCEO DA EMPRESA = " + ceo
 				+ "\nID = " + console.getIdentificacao()
-				+ "\nPreço do console = "+ console.getPrecoConsole()
+				+ "\nPreï¿½o do console = "+ console.getPrecoConsole()
 				+ "\nVersao do console = "+ console.getVersao()
 				+ "\nEstado do console = "+ console.getEstado();
 	}	
-	
-
-
-	
-
 }

@@ -5,9 +5,7 @@ class Sandero implements Car{
  * Objetivo sucinto do programa: Demonstar o uso na interface que pede que os metodos escritos sejam passado tbm para a class na qual foi implementada
  * Referência ao enunciado/origem do exercício:https://docs.oracle.com/javase/tutorial/java/concepts/QandE/questions.html
  */
-    
-    
-    
+
     int testa;
     Boolean possui;
     String qualidade;
@@ -19,7 +17,6 @@ class Sandero implements Car{
     ^
     1 error
      */
-
     public void aplicacaoFreios(int testa){
         this.testa = testa;
     }
@@ -31,6 +28,4 @@ class Sandero implements Car{
     public void rodas(String qualidade){
         this.qualidade = qualidade;
     }
-
-
 }

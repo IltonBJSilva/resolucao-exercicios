@@ -1,14 +1,13 @@
 /* 
- * Nome do autor: Ilton Batista da Silva Júnior 
- * Data de criação do arquivo: 25/01/2019 
+ * Nome do autor: Ilton Batista da Silva Jï¿½nior 
+ * Data de criaï¿½ï¿½o do arquivo: 25/01/2019 
  * Objetivo sucinto do programa: Testar as classe Account.java e Customer.java
- * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
+ * Referï¿½ncia ao enunciado/origem do exercï¿½cio: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
  */
 
 package AccountCustomer;
 
 public class TestClass {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -17,15 +16,8 @@ public class TestClass {
 		
 		Customer customers2 = new Customer(2,"Claudio", 'm');
 		Account account2 = new Account(2, customers2, 929.39);
-		
-
-		
+	
 		System.out.println(account1.toString());
 		System.out.println(account2.toString());
-		
-
-		
-		
 	}
-
 }

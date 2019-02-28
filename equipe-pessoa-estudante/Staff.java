@@ -1,8 +1,8 @@
 /* 
- * Nome do autor: Ilton Batista da Silva Júnior 
- * Data de criação do arquivo: 30/01/2019 
- * Objetivo sucinto do programa: Cria classe Staff.java que manipula dados de um staff com nome, endereço, instituição e pagamento
- * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
+ * Nome do autor: Ilton Batista da Silva Jï¿½nior 
+ * Data de criaï¿½ï¿½o do arquivo: 30/01/2019 
+ * Objetivo sucinto do programa: Cria classe Staff.java que manipula dados de um staff com nome, endereï¿½o, instituiï¿½ï¿½o e pagamento
+ * Referï¿½ncia ao enunciado/origem do exercï¿½cio: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
  */
 
 package br.com.sankhya.exercicio.person;
@@ -41,9 +41,4 @@ public class Staff extends Person{
 				+ ",school=" + school 
 				+ ",pay=" + pay +"]";
 	}
-	
-	
-	
-	
-	
 }

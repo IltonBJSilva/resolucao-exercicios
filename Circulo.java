@@ -16,12 +16,10 @@
     }
     public Circulo(double raio, String cor) {
 
-
     }
 
     public double getRaio(){
         
-
     }
 
     public String getCor(){
@@ -29,7 +27,6 @@
     }
 
     public void setRadio(double raio){
-
 
     }
 
@@ -42,7 +39,7 @@
     public double getArea(){
 
     }
-
+    
     public static void main(String[] args) {
     }
     

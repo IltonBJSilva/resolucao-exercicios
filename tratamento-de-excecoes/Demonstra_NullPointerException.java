@@ -1,4 +1,3 @@
-
 /*
  * Nome do autor: Ilton Batista da Silva Júnior 
  * Data de criação do arquivo: 21/12/2018 
@@ -15,8 +14,5 @@ class Demonstra_NullPointerException{
         } catch(NullPointerException e){
             System.out.println("Não se pode manipular objeto null");
         }
-
     }
-
-
 }

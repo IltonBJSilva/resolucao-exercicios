@@ -1,10 +1,9 @@
 /* 
- * Nome do autor: Ilton Batista da Silva Júnior 
- * Data de criação do arquivo: 23/01/2019 
- * Objetivo sucinto do programa: Criar um classe que modela um livro de um autor, com atributos e métodos
- * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
+ * Nome do autor: Ilton Batista da Silva Jï¿½nior 
+ * Data de criaï¿½ï¿½o do arquivo: 23/01/2019 
+ * Objetivo sucinto do programa: Criar um classe que modela um livro de um autor, com atributos e mï¿½todos
+ * Referï¿½ncia ao enunciado/origem do exercï¿½cio: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
  */
-
 
 package br.com.sankhya.exercicio.autorlivro;
 
@@ -54,8 +53,6 @@ public class Book extends Author{
 	public void setQty(int qty) {
 
 			this.qty = qty+1;
-
-		
 	}
 
 	@Override
@@ -68,10 +65,4 @@ public class Book extends Author{
 	+ "\nBook Price = " + price +" US$"
 	+ "\nQuantity = " + qty;
 	}
-	
-	
-	
-	
-	
-
 }

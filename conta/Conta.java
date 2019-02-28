@@ -21,6 +21,4 @@ private String nome = "carlos"; // variável de instância
     { 
         return nome; // retorna valor do nome para o chamador
     }
-
-    
  } // fim da classe Account

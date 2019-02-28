@@ -9,13 +9,10 @@
 import java.util.Date;
 import java.text.SimpleDateFormat;
 class TestaLivro{
-
     public static void main(String[] args){
        
        SimpleDateFormat converter = new SimpleDateFormat("dd-MM-yyyy");
-       
-       
-        
+
         Date dataAtual = new Date();
         Date dataInicial = new Date(dataAtual.getTime() - (864 * 6 * 100000));
         Date dataFinal = new Date(dataAtual.getTime() + (864 * 3 * 100000));
@@ -35,9 +32,7 @@ class TestaLivro{
         //Livros StarWars
         Livro starWars1 = new Livro(7, " Troopers da Morte ", "Joe Schreiber",  "Disponivel" ,dataInicial, dataFinal);
         Livro starWars2 = new Livro(8, " Um Novo Amanhece ", "Jackson Miller", "Emprestado", dataInicial,dataFinal);
-
-        
-               
+    
         System.out.println("" + starWars1.emprestarLivro());
         
         System.out.println(starWars1.devolverLivro());
@@ -52,9 +47,7 @@ class TestaLivro{
         
         System.out.println("Multa gerado no dia: "+ harryPotter1.getDataDevolucao() +" "+harryPotter1.gerarMulta(4) + " " );
 
- 
         System.out.println("" + Livro.exibeLivroMaisEmprestado(senhorAneis));
 
     }
-
 }

@@ -60,13 +60,8 @@ public class Luta{
             break;
          }
       }
-
       else{
          System.out.println("Luta não pode acontecer");
       }
    }
-   
-
-
-
 }

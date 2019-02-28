@@ -53,20 +53,6 @@ public class Empregado
     }
 
     public String toString(){
-
         return "Fucionario [Salario normal: " + salario  + "\n ID = " + id + "]"; 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

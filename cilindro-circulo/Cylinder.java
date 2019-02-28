@@ -1,10 +1,9 @@
 /* 
- * Nome do autor: Ilton Batista da Silva Júnior 
- * Data de criação do arquivo: 29/01/2019 
+ * Nome do autor: Ilton Batista da Silva Jï¿½nior 
+ * Data de criaï¿½ï¿½o do arquivo: 29/01/2019 
  * Objetivo sucinto do programa: Cria classe de um cilindro gerando altura cor e raio e calcula area e volume 
- * Referência ao enunciado/origem do exercício:https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
+ * Referï¿½ncia ao enunciado/origem do exercï¿½cio:https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
  */
-
 
 package CilindroCircle;
 

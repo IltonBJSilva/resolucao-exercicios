@@ -1,4 +1,3 @@
-
 /*
  * Nome do autor: Ilton Batista da Silva Júnior 
  * Data de criação do arquivo: 20/12/2018 
@@ -12,14 +11,10 @@ class Demonstra_ArrayIndexOutOfBoundsException{
         int casa[] = new int[4];
         
         try{
-            casa[5] = 30;
-            
+            casa[5] = 30; 
         }
         catch(ArrayIndexOutOfBoundsException e){
             System.out.println("Array não existe ou e negativo");
         }
-
     }
-
-
 }

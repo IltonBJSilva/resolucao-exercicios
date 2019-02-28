@@ -1,4 +1,3 @@
-
 /*
  * Nome do autor: Ilton Batista da Silva Júnior 
  * Data de criação do arquivo: 20/12/2018 
@@ -18,9 +17,5 @@ class Demonstra_ArithmeticException{
         catch(ArithmeticException e){
             System.out.println("Impossivel");
         }
-
-
     }
-
-
 }

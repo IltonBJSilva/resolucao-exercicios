@@ -1,11 +1,10 @@
 /* 
- * Nome do autor: Ilton Batista da Silva Júnior 
- * Data de criação do arquivo: 29/01/2019 
+ * Nome do autor: Ilton Batista da Silva Jï¿½nior 
+ * Data de criaï¿½ï¿½o do arquivo: 29/01/2019 
  * Objetivo sucinto do programa: Cria classe para testar Listas
- * Referência ao enunciado/origem do exercício: https://cursos.timtec.com.br/course/programacaojava/lesson/4-topicos-especiais#/5
- * Informações adicionais: Introdução à programação em linguagem JAVA
+ * Referï¿½ncia ao enunciado/origem do exercï¿½cio: https://cursos.timtec.com.br/course/programacaojava/lesson/4-topicos-especiais#/5
+ * Informaï¿½ï¿½es adicionais: Introduï¿½ï¿½o ï¿½ programaï¿½ï¿½o em linguagem JAVA
  */
-
 
 package br.com.sankhya.timtec.topicosespecial;
 
@@ -24,11 +23,8 @@ public class JavaAtm3List {
 		
 		Map<Integer, Integer> distribution = getBillDistribution(amount, billValues);
 		printOutput(amount, distribution);
-		
-		
-	}
-	
 
+	}
 
 	public static void printOutput(int amount, Map<Integer, Integer> distribution) {
 		System.out.println("Dividindo R$ "+ amount +" em notas de R$ 100, "+ "R$ 50, R$ 20, R$ 10, R$ 5, R$  2 e R$ 1");
@@ -38,14 +34,12 @@ public class JavaAtm3List {
 			for(Entry<Integer, Integer> e : distribution.entrySet()) {
 				int value = e.getKey();
 				int bills = e.getValue();
-				
 				System.out.println("sucesso\nNotas de R$ " + value + ": " + bills);
 			}
 		}
 		else if(false) {
 			System.out.println("Erro");
-		}
-			
+		}		
 	}
 	public static Map<Integer, Integer> getBillDistribution(int amount, List<Integer> billValues) {
 		
@@ -56,13 +50,10 @@ public class JavaAtm3List {
 			//distribution.add(amount / value);
 			int bills = amount / value;
 			if(bills > 0 ) {
-				distribution.put(value, bills);
-				
+				distribution.put(value, bills);		
 			}
-			
 			amount %= value;
 		}
 		return distribution;
 	}
-	
 }

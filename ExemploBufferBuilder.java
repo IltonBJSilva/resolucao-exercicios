@@ -1,9 +1,9 @@
 /* 
- * Nome do autor: Ilton Batista da Silva Júnior 
- * Data de criação do arquivo: 01/02/2019 
+ * Nome do autor: Ilton Batista da Silva Jï¿½nior 
+ * Data de criaï¿½ï¿½o do arquivo: 01/02/2019 
  * Objetivo sucinto do programa: Cria classe para demonstrar o StringBuffer e o StringBuilder
- * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1tHsvSkW3aBy2ZpfaSjeoBOKYCG-XaKoBZA8AwFiPxlw/edit
- * Informações adicionais: Concatenação: StringBuilder e StringBuffer
+ * Referï¿½ncia ao enunciado/origem do exercï¿½cio: https://docs.google.com/document/d/1tHsvSkW3aBy2ZpfaSjeoBOKYCG-XaKoBZA8AwFiPxlw/edit
+ * Informaï¿½ï¿½es adicionais: Concatenaï¿½ï¿½o: StringBuilder e StringBuffer
  */
 
 package br.com.sankhya.exercicio.example;
@@ -12,7 +12,6 @@ import java.awt.List;
 import java.util.ArrayList;
 
 public class ExemploBufferBuilder {
-
 	public static void main(String[] args) {
 		//Com Buffer
 		ArrayList<Object> minhaLista = new ArrayList<>();
@@ -35,9 +34,7 @@ public class ExemploBufferBuilder {
 		
 		String s = str.toString();
 		System.out.println(s);
-		
-		
-		
+	
 		//Com builder
 		ArrayList<Object> minhaLista2 = new ArrayList<>();
 		minhaLista2.add("E");
@@ -57,7 +54,6 @@ public class ExemploBufferBuilder {
 		minhaLista2.add("U");
 		minhaLista2.add("M");
 		
-		
 		StringBuilder str2 = new StringBuilder();
 		
 		for(Object percorre2 : minhaLista2) {
@@ -67,8 +63,5 @@ public class ExemploBufferBuilder {
 		String segundaString = str2.toString();
 		System.out.println(segundaString);
 
-		
-		
 	}
-
 }

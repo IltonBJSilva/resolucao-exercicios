@@ -6,8 +6,6 @@
  */
 
 public class TestaFatura {
-
-
     public static void main(String[] args) {
         //Faturas
         Fatura fatura1 = new Fatura(1, "Primeira Fatura", 40, 20);
@@ -41,7 +39,5 @@ public class TestaFatura {
         System.out.println("Quantidade: " + fatura3.getQuantidade());
         System.out.println("Preço Total: " + fatura3.getPrecoTotal());
         System.out.println("descrição: " + fatura3.getDescricao());
-       
     }
-
 }

@@ -6,9 +6,7 @@
  */
 
 public class TestaContaBancaria {
-
-
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         ContaBancaria conta1 = new ContaBancaria(1, "Ilton", 0.0);
         ContaBancaria conta2 = new ContaBancaria(2, "Lucas", 500.0);
         ContaBancaria conta3 = new ContaBancaria(3, "Ana", 800.0);
@@ -37,8 +35,5 @@ public class TestaContaBancaria {
         System.out.println("Titular da conta destino: " + conta1.getNomeTitular());
         System.out.println("Saldo total da sua conta: " + conta3.getSaldo());
         System.out.println("---------------------------");
-        
-       
     }
-
 }

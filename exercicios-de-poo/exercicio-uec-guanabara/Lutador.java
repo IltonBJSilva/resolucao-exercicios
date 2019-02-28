@@ -6,7 +6,6 @@
  * Referência ao enunciado/origem do exercício: https://www.youtube.com/playlist?list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY
  */
 
-
 public class Lutador{
     //Atributos
     private String nome;
@@ -21,7 +20,6 @@ public class Lutador{
 
     //Metodos Especiais
     public Lutador(){}
-    
 
     public Lutador(String nome, String nacionalidade, int idade, float altura, double peso, int vitorias, int derrotas, int empates) {
         this.nome = nome;
@@ -171,7 +169,4 @@ public class Lutador{
         setEmpates(getEmpates() + 1);
 
     }
-
-
-
 }

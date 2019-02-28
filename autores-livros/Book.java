@@ -1,10 +1,9 @@
 /* 
- * Nome do autor: Ilton Batista da Silva Júnior 
- * Data de criação do arquivo: 23/01/2019 
- * Objetivo sucinto do programa: Criar um classe que modela um livro de um autor, com atributos e métodos
- * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
+ * Nome do autor: Ilton Batista da Silva Jï¿½nior 
+ * Data de criaï¿½ï¿½o do arquivo: 23/01/2019 
+ * Objetivo sucinto do programa: Criar um classe que modela um livro de um autor, com atributos e mï¿½todos
+ * Referï¿½ncia ao enunciado/origem do exercï¿½cio: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
  */
-
 
 package AuthorELivro2;
 
@@ -18,7 +17,6 @@ public class Book extends Author{
 	Author[] author;
 	double price;
 	int qty = 1;
-
 	
 	public Book(String name, Author author[], double price, String email, char gender) {
 		super(name,email, gender);
@@ -42,9 +40,7 @@ public class Book extends Author{
 		return name;
 	}
 
-	public void setName(String name) {
-		
-		
+	public void setName(String name) {	
 		this.name = name;
 	}
 
@@ -61,11 +57,8 @@ public class Book extends Author{
 	}
 
 	public void setQty(int qty) {
-
 		this.qty = qty+1;
 	}
-
-
 	
 	@Override
 	public String toString() {
@@ -75,27 +68,16 @@ public class Book extends Author{
 			for(int i = 1; i < author.length; i++) {
 				return ""
 						+ "\nBook name = "+ name
-						
 						+ "\nFirst author name = "+ author[j].getName()
 						+ "\nFirst gender author = " + author[j].getGender()
 						+ "\nFirst email author = " + author[j].getEmail()
-						
 						+ "\nSecond author name = "+ author[i].getName()
 						+ "\nSecond gender author = " + author[i].getGender()
 						+ "\nSecond email author = " + author[i].getEmail()
-
 						+ "\nBook Price = " + price +" US$"
 						+ "\nQuantity = " + qty;
 			}
-
-		
 		}	
-		
-		
 		return Arrays.toString(author);
 	}
-	
 }
-	
-
-

@@ -1,17 +1,15 @@
 package CustomerInvocer;
 /* 
- * Nome do autor: Ilton Batista da Silva Júnior 
- * Data de criação do arquivo: 25/01/2019 
+ * Nome do autor: Ilton Batista da Silva Jï¿½nior 
+ * Data de criaï¿½ï¿½o do arquivo: 25/01/2019 
  * Objetivo sucinto do programa:  Cria clase que recebe valores de id nome e desconto de um cliente
- * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
+ * Referï¿½ncia ao enunciado/origem do exercï¿½cio: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
  */
 public class Customer {
 
 	int Id;
 	String name;
 	int discount;
-	
-	
 	
 	public Customer(int id, String name, int discount) {
 		super();
@@ -42,9 +40,8 @@ public class Customer {
 	@Override
 	public String toString() {
 		return "Customer ["
-				+ "Id=" + Id 
-				+ ", name=" + name 
-				+ ", discount=" + discount + "]";
+		+ "Id=" + Id 
+		+ ", name=" + name 
+		+ ", discount=" + discount + "]";
 	}
-
 }

@@ -1,8 +1,8 @@
 /* 
- * Nome do autor: Ilton Batista da Silva Júnior 
- * Data de criação do arquivo: 17/01/2019 
- * Objetivo sucinto do programa: Demonstração da coleção ArrayList<T> genérica do livro de referência Java
- * Referência ao enunciado/origem do exercício: Paul Deitel, Harvey Deitel-Java - Como Programar-Pearson (2016)  páginas 225 ate 227
+ * Nome do autor: Ilton Batista da Silva Jï¿½nior 
+ * Data de criaï¿½ï¿½o do arquivo: 17/01/2019 
+ * Objetivo sucinto do programa: Demonstraï¿½ï¿½o da coleï¿½ï¿½o ArrayList<T> genï¿½rica do livro de referï¿½ncia Java
+ * Referï¿½ncia ao enunciado/origem do exercï¿½cio: Paul Deitel, Harvey Deitel-Java - Como Programar-Pearson (2016)  pï¿½ginas 225 ate 227
  */
 
 import java.util.ArrayList;
@@ -11,18 +11,18 @@ public class ArrayListCollection {
 	public static void main(String[] args) {
 		// cria um novo ArrayList de strings com uma capacidade inicial de 10
 		ArrayList<String> objeto = new ArrayList<String>();
+		
+		objeto.add(" vermelho "); // anexa um item ï¿½ lista qual quer que seja
+		objeto.add(0, " amarelo "); // insere "yellow" no ï¿½ndice 0 ja coloca no 0 se tiver outro ele sobrescreve
 
-		objeto.add(" vermelho "); // anexa um item à lista qual quer que seja
-		objeto.add(0, " amarelo "); // insere "yellow" no índice 0 ja coloca no 0 se tiver outro ele sobrescreve
-
-		// cabeçalho
+		// cabeï¿½alho
 		System.out.print(" lista com conteudo e controle de loop na tela: ");
 
 		// exibe as cores na lista
 		for (int i = 0; i < objeto.size(); i++)
 			System.out.printf(" %s", objeto.get(i));
 
-		// exibe as cores usando for aprimorada no método tela
+		// exibe as cores usando for aprimorada no mï¿½todo tela
 		tela(objeto, "%nlista com conteudo melhorado na tela: ");
 
 		objeto.add(" verde "); // adiciona "verde" ao fim da lista
@@ -33,20 +33,20 @@ public class ArrayListCollection {
 		objeto.remove(" amarelo "); // remove o primeiro "yellow"
 		tela(objeto, "Remove primeira instancia amarela: ");
 
-		objeto.remove(1); // remove o item no índice 1
+		objeto.remove(1); // remove o item no ï¿½ndice 1
 		tela(objeto, "Remove segundo elemento da lista ( verde ): ");
 
-		// verifica se um valor está na Lista
+		// verifica se um valor estï¿½ na Lista
 		System.out.printf("\" Vermelho \" %s esta  na lista%n ", 
-		objeto.contains(" vermelho ") ? "" : "não ");
+		objeto.contains(" vermelho ") ? "" : "nï¿½o ");
 		
-		// exibe o número de elementos na Lista
+		// exibe o nï¿½mero de elementos na Lista
 		System.out.printf(" Tamanho:  %s%n", objeto.size());
 	}
 
 	// exibe elementos do ArrayList no console
-	public static void tela(ArrayList<String> objeto, String cabeça) {
-		System.out.printf(cabeça); // exibe o cabeçalho
+	public static void tela(ArrayList<String> objeto, String cabeï¿½a) {
+		System.out.printf(cabeï¿½a); // exibe o cabeï¿½alho
 
 		// exibe cada elemento em itensoo
 		for (String objetos : objeto)

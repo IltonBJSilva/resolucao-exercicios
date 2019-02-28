@@ -1,6 +1,4 @@
-
 public class TestaSony {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -13,7 +11,5 @@ public class TestaSony {
 
 		//sony1.toString();
 		System.out.println(sony1.toString());
-		
 	}
-
 }

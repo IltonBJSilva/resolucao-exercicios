@@ -57,7 +57,4 @@ public class Fatura
    public String toString(){
         return "Fatura[Quantidade: " + quantidade + "\n preço por unidade: " + precoUnidade + "\n ID: " + id + "descrição: " + descricao + "]"; 
     }
-
-
-
 }    

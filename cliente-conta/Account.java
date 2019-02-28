@@ -1,10 +1,9 @@
 /* 
- * Nome do autor: Ilton Batista da Silva Júnior 
- * Data de criação do arquivo: 25/01/2019 
+ * Nome do autor: Ilton Batista da Silva Jï¿½nior 
+ * Data de criaï¿½ï¿½o do arquivo: 25/01/2019 
  * Objetivo sucinto do programa: Cria classe que realiza debito, credito e faz deposito em uma determinada conta de um cliente
- * Referência ao enunciado/origem do exercício: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
+ * Referï¿½ncia ao enunciado/origem do exercï¿½cio: https://docs.google.com/document/d/1wSPKmVGsvzHlM13SY_IxCcqA1AhFboDvSy6M6NqOTfY/edit
  */
-
 
 package AccountCustomer;
 
@@ -12,23 +11,19 @@ public class Account {
 	int id;
 	Customer customer;
 	double balance = 0.0;
-	
+
 	public Account(int id, Customer customer, double balance) {
 		super();
 		this.id = id;
 		this.customer = customer;
 		this.balance = balance;
 	}
-	
-	
 
 	public Account(int id, Customer customer) {
 		super();
 		this.id = id;
 		this.customer = customer;
 	}
-
-
 
 	public int getId() {
 		return id;
@@ -76,18 +71,10 @@ public class Account {
         } else {
             return "insufficient balance";
         }
-    }
-
-	
-	
+	}
 	
 	@Override
 	public String toString() {
 		return "Account [id = " + id + ", customer ID = " + customer + ", balance = " + balance + "]";
 	}
-	
-	
-	
-	
-
 }
